@@ -24,6 +24,11 @@ public:
   */
   VectorXd CalculateRMSE(const vector<VectorXd> &estimations, const vector<VectorXd> &ground_truth);
 
+  /**
+  * A helper method to ConvertPolarToCartesian.
+  */
+  VectorXd ConvertPolarToCartesian(const VectorXd &raw_measurements_);
+
 };
 
 #endif /* TOOLS_H_ */
